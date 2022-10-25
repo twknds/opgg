@@ -13,8 +13,8 @@
 </head>
 <body>
 	<nav class="navbar sticky-top  navbar-dark bg-dark">
-  		<a class="navbar-brand" href="/noxikaGG" >Noxika.GG</a>
-  			<form  action="/noxikaGG/search" method="GET">
+  		<a class="navbar-brand" href="/home" >jun.GG</a>
+  			<form  action="/summoner/search" method="GET">
 		 		<div class="nav-embed-submit-field">
   						<input type="text" placeholder="당신의 아이디를 검색하세요!" name="title">
    					<button type="submit" >검색!</button>
@@ -50,7 +50,7 @@
 					<fmt:formatNumber var="percent" value="${leagueInfo.getWins()/(leagueInfo.getWins()+leagueInfo.getLosses())}" pattern="0.00%" />
 					<span style="color: #6c757d; font-size:18px;"> (${percent}) </span>
 					<h3>당신의 티어는? </h3>
-					<p>당신의 리그는 ${leagueName[s.index]}, ${leagueInfo.getTier()} ${leagueInfo.getRank()} 단계 입니다.</p>
+					<p> ${leagueInfo.getTier()} ${leagueInfo.getRank()} 단계 입니다.</p>
 				</div>
 			</div>
 		</c:forEach>
@@ -61,7 +61,7 @@
 	  	<div class="row"> 
 	  		  <!-- Copyright -->
 	  		<div class="col-sm-12" style="text-align: center; padding:10px; ">
-	  			© 2019 Copyright: <a href="/noxikaGG"> NOXIKA.GG</a>
+	  			© 2019 Copyright: <a href="/home"> jun.GG</a>
 	  		</div>
 	  	</div>
       </div>
